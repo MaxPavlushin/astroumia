@@ -1,88 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<title>CSS Website Layout</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-    box-sizing: border-box;
-}
+<html>
 
-body {
-  margin: 0;
-}
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="styles/theme.css">
+	</head>
 
-.main {
-  color: #D0BFE3;
-  text-align: center;
-  background-color: black;
-  padding: 10px;
-  height: 1200px;
-} 
+	<body>
 
-.column {
-    float: left;
-    padding: 10px;
-}
+		<div id="Главная" class="tabcontent">
+			<p>Moscow is the capital city of England.</p>
+		</div>
 
-.column.side {
-    width: 18%;
-	text-align: center;
-}
+		<div id="Ты" class="tabcontent">
+			<p>Max</p>
+		</div>
 
-p {
-    color: #D0BFE3
-}
+		<div id="ВСЕЛЕННАЯ" class="tabcontent">
+			<p>Tokyo is the capital of Japan.</p>
+		</div>
 
-.column.middle {
-    width: 28%;
-	text-align: center;
-}
+		<div id="Окружение" class="tabcontent">
+			<p>London is the capital city of England.</p>
+		</div>
 
-.row {
-  border-style: solid none none none;
-  border-width: 1px;
-  border-color: #D0BFE3;
-  background-color: black;
-  position: fixed;
-  bottom: 1px;
-  left: 1px;
-  right: 1px;
-}
+		<div id="Проект" class="tabcontent">
+			<p>Berlin is the capital city of Germany.</p>
+		</div>
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+		<!-- РАЗМЕТКА ГЛАНОГО МЕНЮ -->
+		<div class="row">
+			<div class="column side" onclick="openTab(event, 'Главная')" id="defaultOpen">Главная</div>
+			<div class="column side" onclick="openTab(event, 'Ты')">Ты</div>
+			<div class="column middle" onclick="openTab(event, 'ВСЕЛЕННАЯ')">ВСЕЛЕННАЯ</div>
+			<div class="column side" onclick="openTab(event, 'Окружение')">Окружение</div>
+			<div class="column side" onclick="openTab(event, 'Проект')">Проект</div>
+		</div>
 
-</style>
-</head>
-<body>
+		<!-- СКРИПТ -->
+		<script src="scripts\main.js"></script> <!-- Основное меню -->
 
-<div class="main">
-  <p>Привет, ...! Сегодня ...</p>
-  <p>Lorem ipsum..</p>
-</div>
-
-<div class="row">
-  <div class="column side">
-    <p>Главная</p>
-  </div>
-  <div class="column side">
-    <p>Ты</p>
-  </div>
-  <div class="column middle">
-    <p>Main Content</p>
-  </div>
-  <div class="column side">
-    <p>Окружение</p>
-  </div>
-  <div class="column side">
-    <p>Проект</p>
-  </div>
-</div>
-  
-</body>
+	</body>
 </html>
