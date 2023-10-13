@@ -26,6 +26,13 @@ body {
 
 p {
     color: #EEE0FF;
+	padding: 10px;
+}
+
+a {
+		color: #EEE0FF;
+		padding: 10px;
+		text-decoration: none;
 }
 
 .column.side {
@@ -49,18 +56,18 @@ p {
 	bottom: 1px;
 	left: 1px;
 	right: 1px;
-	font-size: 12px;
+	font-size: 14px;
+	padding: 10px;
 }
 
 .tabcontent {
 	display: none;
-	padding: 6px 12px;
+	padding: 12px 12px;
 	-webkit-animation: fadeEffect 1s;
 	animation: fadeEffect 1s;
 	text-align: center;
 	background-color: black;
-	font-size: 12px;
-	padding: 10px;
+	font-size: 14px;
 	height: 1200px;
 }
 
