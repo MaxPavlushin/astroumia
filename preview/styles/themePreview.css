@@ -4,13 +4,13 @@
 
 body {
     margin: 0;
-	  background-color: black;
+	background-color: black;
     color: #B9A2CE;
 }
 
 p {
     font-family: Forum;
-    font-size: 12px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 18px;
@@ -30,7 +30,7 @@ p {
 .header {
     text-align: center;
     font-family: EB Garamond;
-    font-size: 20px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
     margin-top: 30px;
@@ -134,7 +134,7 @@ p {
     margin-top: 30px;
     margin-bottom: 30px;
     font-family: EB Garamond;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 400;
     box-shadow: 3px 3px 3px grey;
 }
