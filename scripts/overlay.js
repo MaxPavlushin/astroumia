@@ -37,7 +37,7 @@ window.addEventListener("scroll", (event) => {
     let scroll = this.scrollY;
 
     const scull = document.getElementById("scull"); 
-    if (scroll > 500) {
+    if (scroll > 700) {
         scull.style.transform = "scaleX(-1)";
     } else {
         scull.style.transform = "scaleX(1)";
@@ -46,7 +46,7 @@ window.addEventListener("scroll", (event) => {
     let image = document.getElementById("moon");
     let overFlow = 0;
 
-    if (scroll>900) {
+    if (scroll>1200) {
         image.style.opacity = "0";
     } else {
         image.style.opacity = "1";
