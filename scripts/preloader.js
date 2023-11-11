@@ -1,3 +1,6 @@
+let tg = window.Telegram.WebApp; 
+tg.expand();  
+
 (function() {
     var DrawingThing, SIZE, TWO_PI, c, canvas, clear, createCanvas, ct, drawingThings, quarterSize, threQuarters, trails;
     SIZE = 230;
