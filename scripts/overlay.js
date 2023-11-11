@@ -37,7 +37,3 @@ window.addEventListener("scroll", (event) => {
     }
     
 });
-
-let tg = window.Telegram.WebApp; 
-
-tg.expand();  
