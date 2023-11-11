@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="preview/styles/themePreview.css">
+        <link rel="stylesheet" href="preview/styles/suggestions.css">
+        <link href="https://fonts.googleapis.com/css2?family=Forum&family=IBM+Plex+Mono:wght@300&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+
+        <div class="preloader">
+            <p id = "fact"></p>
+        </div>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <div class="overlay-content">
+              <p class = "overlay-content">Проверьте данные своего рождения!</p>
+              <p class = "overlay-content">Место: <span class = "inputData" id="mesto"></span></p>
+              <p class = "overlay-content">Дата: <span class = "inputData" id="data"></span></p>
+              <p class = "overlay-content">Время: <span class = "inputData" id="vremya"></span></p>
+              <p class = "overlay-content">Ваше имя: <span class = "inputData" id="imya"></span></p>
+              <p class = "overlay-content">Ваш пол: <span class = "inputData" id="pol"></span></p>
+              <button class="button2" type="button">Подтвердить!</button>
+            </div>
+          </div>
+
+		<img class = "planet" src="preview/img/Planet.png" width="300" height="160"> 
+        <h1 class = "header">Добро пожаловать в клуб избранных!</h1>
+        <p class = "center">Волею судьбы тебе открывается доступ к самой точной и персонализированной 
+            астрологии в истории человечества</p>
+        
+        <div class = "firstBlock">
+            <img class = "books" src="preview/img/Books.png" width="150" height="150"> 
+            <p class = "rightText">Мы обучили нашу систему на информации большинства существующих источников
+                о влиянии небесных тел - от самых древних до современных - более тысячи трудов и исследований</p>
+        </div>
+       
+        <div class = "secondBlock">
+            <p class = "leftText">Созданная нами, постоянно обучающаяся модель искусственного интеллекта, 
+                обеспечивает самый глубокий анализ, создавая наиболее точные и персонализированные 
+                прогнозы</p>
+            <img class = "superAi" src="preview/img/Super_AI.png" width="150" height="150"> 
+        </div>
+
+        <p class = "center">Полученный нами результат недостижим ни одним астрологом - люди ошибаются, 
+            возможности человеческого мозга ограничены. Компьютеры надежны и всегда точны</p>
+
+        <img class = "scull" id = "scull" src="preview/img/Scull.png" width="150" height="150"> 
+
+        <h1 class = "header">Влияют ли звезды на судьбы?</h1>
+
+        <p class = "center">Гравитация Луны способна перемещать океаны - триллионы тон воды, создавая приливы 
+            и отливы. Измеримая точными науками энергия, результаты влияния которой видимы каждому невооруженным глазом. 
+            Большие звездные тела способны искажать ткань пространства-времени своим гравитационным влиянием</p>
+
+        <div class="container">
+            <img class = "moon" id="happy" src="preview/img/Happy.png">
+            <img class = "moon" id="moon" src="preview/img/Moon.png">
+        </div>
+
+        <p class = "center">Жизнь - это удивительное путешествие. Какие испытания и приключения ждут нас в пути? 
+            С помощью компаса и карты можно выбрать самый короткий и легкий путь к своей цели, тогда и путешествие 
+            становится легким, комфортным и увлекательным</p>
+        
+        <form>
+            <h1 class = "header">Ищешь путеводитель по счастливой жизни? Получи доступ к самой точной астрологии 21 века</h1>
+
+            <p class="center">Я рожден(-а) в городе:</p>
+
+            <input class="firstAddress" id="address" name="address" type="text" required/>
+            <p class="notation">введите место рождения</p>
+
+            <div class="dateBlock">
+                <p class="time">дата рождения:</p>
+                <input id="date" type="date" min="1940-01-01" max="2010-01-01" value="2000-01-01" required/>
+            </div>
+            <p class="notation">введите дату рождения</p>
+
+            <div class="timeBlock">
+                <p class="time">время рождения:</p>
+                <input id="time" type="time" value="12:00" required/>	
+            </div>
+            <p class="notation">введите время рождения (если данная информация Вам не известна, 
+            рекомендуем установить 12:00)</p>
+
+         
+            <p class="center">Ваше имя:</p>
+            <input id="name" type="text" required/>
+            <p class="notation">введите имя</p>
+
+            <p class="center">Ваш пол:</p>
+            <div class = "thirdBlock">
+                <span><input class="gender" id="gender" name="gender" type="radio" value="Женщина" checked> ЖЕНЩИНА</span>
+                <span><input class="gender" name="gender" type="radio" value="Мужчина"> МУЖЧИНА</span>
+            </div>
+            
+
+            <button class="button" type="button" onclick="openNav()">Получить!</button>
+        </form>
+
+        <script src="https://telegram.org/js/telegram-web-app.js"></script>
+        <script src="scripts/preloader.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+	    <script src='https://cdn.jsdelivr.net/npm/suggestions-jquery@latest/dist/js/jquery.suggestions.min.js'></script>
+	    <script  src="scripts/address.js"></script> 
+        <script  src="scripts/overlay.js"></script> 
+		
+	</body>
+
+</html>
